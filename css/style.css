@@ -656,7 +656,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .portfolio-item figure h2 {
-  color: #000000;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 500;
   text-align: left;
@@ -667,7 +667,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   line-height: 24px;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
   text-align: left
 }
 

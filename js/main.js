@@ -51,16 +51,17 @@
       $('#mobile-body-overly').toggle();
     });
 
-    // $(document).click(function(e) {
-    //   var container = $("#mobile-nav, #mobile-nav-toggle");
-    //   if (!container.is(e.target) && container.has(e.target).length === 0) {
-    //     if ($('body').hasClass('mobile-nav-active')) {
-    //       $('body').removeClass('mobile-nav-active');
-    //       $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-    //       $('#mobile-body-overly').fadeOut();
-    //     }
-    //   }
-    // });
+    $(document).click(function(e) {
+      var container = $("#mobile-nav, #mobile-nav-toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+          $('#mobile-body-overly').fadeOut();
+        }
+      }
+    });
+
   } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
@@ -136,15 +137,6 @@
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
-  });
-
-  // Clients carousel (uses the Owl Carousel library)
-  $(".clients-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: { 0: { items: 2 }, 768: { items: 4 }, 900: { items: 6 }
-    }
   });
 
 })(jQuery);

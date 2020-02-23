@@ -626,9 +626,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-right: 0px !important;
 }
 
-
 .portfolio-item {
   position: relative;
+  padding: 50px;
+  margin-bottom: 20px;
 }
 
 .portfolio-item figure figcaption {

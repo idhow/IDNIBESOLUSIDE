@@ -7,6 +7,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fe0000;
+}
+
 a {
   color: #fe0000;
   transition: 0.5s;
